@@ -32,3 +32,13 @@
 # Temporary files
 *.tmp
 *.log
+
+# QEMU / Virtual Machines
+*.qcow2
+*.img
+*.iso
+*.vdi
+*.vmdk
+qemu/
+vm/
+windows-vm/
