@@ -1,4 +1,4 @@
-# MS Project Merger
+# MS Project Merge
 
 Smart merge tool for Microsoft Project files with WBS-based conflict resolution.
 
@@ -9,8 +9,8 @@ Smart merge tool for Microsoft Project files with WBS-based conflict resolution.
 
 **[Download Latest Release](https://github.com/pigeonflight/msproject-merge/releases/latest)**
 
-- **macOS**: `MsProjectMerger-v1.0.0.dmg`
-- **Windows**: `MsProjectMerger-v1.0.0.exe`
+- **macOS**: `MsProjectMerge-v1.0.0.dmg`
+- **Windows**: `MsProjectMerge-v1.0.0.exe`
 
 ## ✨ Features
 
@@ -33,7 +33,7 @@ Smart merge tool for Microsoft Project files with WBS-based conflict resolution.
 ## 🚀 Quick Start
 
 1. **Download** the installer for your platform
-2. **Launch** MS Project Merger
+2. **Launch** MS Project Merge
 3. **Step 1**: Add your Base Project and Overlay files
 4. **Step 2**: Review merged data, edit tasks as needed
 5. **Step 3**: Export to MSPDI (XML) or Excel

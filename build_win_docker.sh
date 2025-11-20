@@ -13,6 +13,6 @@ docker build -f Dockerfile.windows -t msproject-merge-windows-builder .
 docker run --rm -v "$(pwd)":/app msproject-merge-windows-builder
 
 # Rename the output with version
-mv target/x86_64-pc-windows-gnu/release/msproject-merge.exe "target/x86_64-pc-windows-gnu/release/MsProjectMerger-v${VERSION}.exe"
+mv target/x86_64-pc-windows-gnu/release/msproject-merge.exe "target/x86_64-pc-windows-gnu/release/MsProjectMerge-v${VERSION}.exe"
 
-echo "Build complete! Windows executable created at: target/x86_64-pc-windows-gnu/release/MsProjectMerger-v${VERSION}.exe"
+echo "Build complete! Windows executable created at: target/x86_64-pc-windows-gnu/release/MsProjectMerge-v${VERSION}.exe"

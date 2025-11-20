@@ -10,7 +10,7 @@ VERSION=$(grep '^version' Cargo.toml | head -1 | sed 's/version = "\(.*\)"/\1/')
 cargo build --release
 
 # Create app bundle structure
-APP_NAME="MsProjectMerger"
+APP_NAME="MsProjectMerge"
 APP_DIR="target/release/${APP_NAME}.app"
 CONTENTS_DIR="${APP_DIR}/Contents"
 MACOS_DIR="${CONTENTS_DIR}/MacOS"
