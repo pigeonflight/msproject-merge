@@ -12,6 +12,8 @@ Smart merge tool for Microsoft Project files with WBS-based conflict resolution.
 - **macOS**: `MsProjectMerge-v1.0.0.dmg`
 - **Windows**: `MsProjectMerge-v1.0.0.exe`
 
+> **Note**: First-time installation requires a security override. See [INSTALL.md](INSTALL.md) for detailed instructions.
+
 ## ✨ Features
 
 ### Smart Merge
