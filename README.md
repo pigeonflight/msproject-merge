@@ -118,4 +118,12 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
+## 👤 Author
+
+**Built by [David Bain](https://x.com/pigeonflight)**
+
+Follow [@pigeonflight](https://x.com/pigeonflight) on X for updates and project management insights.
+
+---
+
 **Made with ❤️ for project managers everywhere**
