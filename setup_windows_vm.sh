@@ -27,6 +27,8 @@ if [ -f "$HOME/Downloads/Win11_English_x64.iso" ]; then
     ISO_PATH="$HOME/Downloads/Win11_English_x64.iso"
 elif [ -f "$HOME/Downloads/Win11_23H2_English_x64.iso" ]; then
     ISO_PATH="$HOME/Downloads/Win11_23H2_English_x64.iso"
+elif [ -f "$HOME/Downloads/Win11_25H2_English_x64.iso" ]; then
+    ISO_PATH="$HOME/Downloads/Win11_25H2_English_x64.iso"
 fi
 
 if [ -z "$ISO_PATH" ]; then
@@ -48,12 +50,22 @@ echo ""
 echo "Press Enter to continue..."
 read
 
+# Try to use HVF acceleration, fall back to TCG if not available
+ACCEL_FLAG=""
+if qemu-system-x86_64 -accel help 2>&1 | grep -q hvf; then
+    echo "Using HVF acceleration (fast)"
+    ACCEL_FLAG="-accel hvf"
+else
+    echo "Using TCG emulation (slower, but works)"
+    ACCEL_FLAG="-accel tcg"
+fi
+
 # Start installation
 qemu-system-x86_64 \
   -m 4G \
   -smp 2 \
-  -cpu host \
-  -accel hvf \
+  -cpu qemu64 \
+  $ACCEL_FLAG \
   -drive file="$DISK_IMAGE",if=virtio \
   -cdrom "$ISO_PATH" \
   -boot d \
