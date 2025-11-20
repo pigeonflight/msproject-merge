@@ -1,0 +1,18 @@
+FROM rust:latest
+
+# Install MinGW-w64 for Windows cross-compilation
+RUN apt-get update && \
+    apt-get install -y mingw-w64 && \
+    rm -rf /var/lib/apt/lists/*
+
+# Add the Windows target
+RUN rustup target add x86_64-pc-windows-gnu
+
+# Set the working directory
+WORKDIR /app
+
+# Copy the current directory contents into the container
+COPY . .
+
+# Build for Windows
+CMD ["cargo", "build", "--release", "--target", "x86_64-pc-windows-gnu"]

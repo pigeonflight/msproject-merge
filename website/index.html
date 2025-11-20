@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS Project Merger - Download</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>MS Project Merger</h1>
+            <p class="tagline">Smart merge for Microsoft Project files with WBS-based conflict resolution</p>
+        </header>
+
+        <main>
+            <section class="features">
+                <h2>Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="icon">📊</div>
+                        <h3>Smart Merge</h3>
+                        <p>Merge multiple project files using WBS codes as the primary key</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🔄</div>
+                        <h3>Conflict Resolution</h3>
+                        <p>Automatically update tasks or append new ones based on WBS matching</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">📁</div>
+                        <h3>Multiple Formats</h3>
+                        <p>Import and export MSPDI (XML) and Excel formats</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="icon">🎨</div>
+                        <h3>Modern UI</h3>
+                        <p>Clean, intuitive interface with dark mode support</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="download-section" id="download">
+                <h2>Download MS Project Merger</h2>
+                <p>Enter your email to download the latest version</p>
+                
+                <form id="downloadForm" class="download-form">
+                    <input 
+                        type="email" 
+                        id="emailInput" 
+                        placeholder="Enter your email address" 
+                        required
+                        autocomplete="email"
+                    >
+                    <div class="platform-buttons">
+                        <button type="submit" data-platform="mac" class="download-btn mac-btn">
+                            <span class="btn-icon">🍎</span>
+                            <span class="btn-text">Download for macOS</span>
+                        </button>
+                        <button type="submit" data-platform="windows" class="download-btn windows-btn">
+                            <span class="btn-icon">🪟</span>
+                            <span class="btn-text">Download for Windows</span>
+                        </button>
+                    </div>
+                </form>
+
+                <div id="successMessage" class="success-message" style="display: none;">
+                    <p>✅ Thank you! Your download will begin shortly.</p>
+                </div>
+            </section>
+
+            <section class="how-it-works">
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Select Files</h3>
+                        <p>Add your Base Project and Overlay files</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Review & Edit</h3>
+                        <p>Review merged data and make adjustments</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Export</h3>
+                        <p>Export to MSPDI (XML) or Excel format</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 MS Project Merger. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
